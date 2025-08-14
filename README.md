@@ -3,7 +3,7 @@
 This repository demonstrates a bug where, in subdirectories, VSCode’s package manager detection for the "npm.scriptRunner" setting does not work as expected. It defaults to npm instead of respecting the "auto" setting (and picking up pnpm in my case).
 
 ## The issue:
-In my polyglot monorepo setup, when running package.json scripts with the VSCode Explorer "NPM Scripts" view, these scripts would always execute with npm and not pick up that I am using pnpm despite having "npm.scriptRunner" set to "auto".
+In my polyglot monorepo setup, when running package.json scripts with the VSCode Explorer "NPM Scripts" view, these scripts would always execute with npm and not pick up that I am using pnpm despite having "npm.scriptRunner" set to "auto". Also initial install with `Run Install` in the Explorer's NPM Scripts view also defaults to npm despite the presence of a `pnpm-lock.yaml`.
 
 ## Reproduction
 1. Ensure you have Node, PNPM, and NPM installed.
