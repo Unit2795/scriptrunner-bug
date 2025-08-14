@@ -40,6 +40,13 @@ In my polyglot monorepo setup, when running package.json scripts with the VSCode
 ### Extensions
 None
 
+### OS Details
+- Edition	Windows 11 Pro
+- Version	24H2
+- Installed on	12/6/2024
+- OS build	26100.4770
+- Experience	Windows Feature Experience Pack 1000.26100.197.0
+
 ### Node & Package Manager Versions
 - Node: 24.5.0
 - NPM: 11.5.2
