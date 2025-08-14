@@ -1,0 +1,18 @@
+{
+  "name": "scriptrunner-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bug": "echo \"Hello World!\" && exit 0",
+    "script": "node detector.js",
+    "detect": "node -e \"const agent = process.env.npm_config_user_agent; if (agent && agent.includes('yarn')) { console.log('🎉 Yarn detected!'); } else if (agent && agent.includes('pnpm')) { console.log('🚀 PNPM detected!'); } else { console.log('📦 NPM detected!'); }\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "dependencies": {
+    "package-manager-detector": "^1.3.0"
+  }
+}
